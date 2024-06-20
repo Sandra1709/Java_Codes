@@ -1,0 +1,20 @@
+class Solution {
+    public int removeDuplicates(int[] nums) {
+         if (nums.length <=2) {
+            return nums.length;
+        }
+        
+        int k = 2;  // Start from 1 because the first element is always unique
+        
+        for (int i = 2; i < nums.length; i++) {
+            if (nums[i] != nums[k - 2]) {
+               
+                            nums[k] = nums[i];
+                k++;
+                
+            }
+        }
+        
+        return k;
+    }
+}
