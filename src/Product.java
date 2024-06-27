@@ -37,8 +37,8 @@ public class Product {
 
 }
 class Electronics extends Product {
-    private String brand;
-    private int warrantyPeriod;
+    public  String brand;
+    public int warrantyPeriod;
 
     public Electronics(String productName, int productId, double price, int quantityInStock, String brand, int warrantyPeriod) {
         super(productName, productId, price, quantityInStock);
