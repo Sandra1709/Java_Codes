@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+
 
 public class Product {
       String productName;
@@ -74,10 +72,6 @@ class Clothing extends Product {
         System.out.println("Material: " + material);
     }
 }
-public class Main {
-    public static void main(String[] args) {
-        ShoppingCart cart = new ShoppingCart();
-        Scanner scanner = new Scanner(System.in);
 
 
 
